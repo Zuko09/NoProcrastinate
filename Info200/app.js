@@ -33,7 +33,7 @@
         $scope.clickMain = function() {
             if($scope.isOn && $scope.page != "main"){
                 if($scope.isMenuOpen){
-                    $scope.currentPage = "on-menu-main"; 
+                    $scope.currentPage = "on-menu-main";
                     $scope.thisPage = "main";
                 } else {
                     $scope.currentPage = "on-noMenu-main";
@@ -94,6 +94,19 @@
                 var page = $scope.currentPage;
                 var result = page.slice(0,8) + "info-two";
                 $scope.thisPage = "info-two";
+                $scope.currentPage = result;
+            }
+        }
+        $scope.clickInfoScroll = function() {
+            if($scope.isMenuOpen) {
+                var page = $scope.currentPage;
+                if($scope.thisPage == "info-two"){
+                    var result = page.slice(0,8) + "info-one";
+                    $scope.thisPage = "info-one";
+                } else if ($scope.thisPage == "info-one") {
+                    var result = page.slice(0,8) + "info-two";
+                    $scope.thisPage = "info-two";
+                }
                 $scope.currentPage = result;
             }
         }

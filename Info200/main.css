@@ -87,3 +87,9 @@ img{
     top: 405px;
     left:20px;
 }
+#info-scroll {
+    position:absolute;
+    min-height: 400px;
+    top: 215px;
+    left:920px;
+}
