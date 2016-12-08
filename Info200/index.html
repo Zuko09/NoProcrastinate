@@ -1,0 +1,48 @@
+<html lang="en" ng-app="app1" ng-controller="appController">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FocusMe</title>
+
+    <!-- Custom CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AngularJS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- <script src="js/angular.js"></script>-->
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/{{currentPage}}.png"></img>
+        <div id="buttons">
+            <div id="on" ng-click="clickOn()"></div>
+            <div id="off" ng-click="clickOff()"></div>
+            <div id="main" ng-click="clickMain()"></div>
+            <div id="menu" ng-click="clickMenu()"></div>
+            <div id="notif" ng-click="clickNotif()"></div>
+            <div id="settings" ng-click="clickSettings()"></div>
+            <div id="rewards" ng-click="clickRewards()"></div>
+            <div id="rankings" ng-click="clickRankings()"></div>
+            <div id="info" ng-click="clickInfo()"></div>
+        </div>
+    </div>
+    <!-- <div>
+            <h1>The Team</h1>
+            <ul>
+                <li> Team Captain: Varun Viswanath</li>
+                <li> Conflict Mediator: Stone Kaech</li>
+                <li> Kidus Yohanes</li>
+                <li> Saksham Aggarwal</li>
+                <li> Tejaswini Sareen</li>
+            </ul>
+        </div> -->
+</body>

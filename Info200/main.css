@@ -1,0 +1,89 @@
+html,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+}
+
+.container {
+    position:relative;
+}
+
+img{
+    height:650px;
+    width:auto;
+    /*height:auto;
+    width:auto;*/
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    margin: 0px;
+}
+
+#buttons{
+    display: inline-block;
+}
+#buttons > div {
+    float: left;
+    /*background-color: red;*/
+    height: 50px;
+    width: 50px;
+}
+
+#off{
+    position:absolute;
+    min-height: 70px;
+    min-width: 70px;
+    top: 205px;
+    left:600px;
+}
+#on{
+    position:absolute;
+    min-height: 70px;
+    min-width: 70px;
+    top: 205px;
+    left:510px;
+}
+#main {
+    position:absolute;
+    min-width: 240px;
+    top: 10;
+    left:200;
+}
+#menu {
+    position:absolute;
+    min-height: 60px;
+    min-width:90px;
+    top: 50px;
+    left: 50px;
+}
+#notif {
+    position:absolute;
+    min-width: 160px;
+    top: 170px;
+    left:20px;
+}
+#settings {
+    position:absolute;
+    min-width: 160px;
+    top: 235px;
+    left:20px;
+}
+#rewards{
+    position:absolute;
+    min-width: 160px;
+    top: 295px;
+    left:20px;
+}
+#rankings{
+    position:absolute;
+    min-width: 160px;
+    top: 350px;
+    left:20px;
+}
+#info {
+    position:absolute;
+    min-width: 160px;
+    top: 405px;
+    left:20px;
+}
